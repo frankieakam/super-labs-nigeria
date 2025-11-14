@@ -318,8 +318,8 @@ export default function WhyUs() {
                 </div>
               </div>
 
-              {/* Connection Lines - Made responsive */}
-              <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet">
+              {/* Connection Lines - For Large Devices */}
+              <svg className="hidden md:block absolute inset-0 w-full h-full" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet">
                 {/* Line 1: Incomplete Puzzle → Super Labs Nigeria */}
                 <path 
                   d="M160,100 Q250,50 280,180"
@@ -329,23 +329,51 @@ export default function WhyUs() {
                   fill="none"
                   className="animate-pulse"
                 />
-                
                 {/* Line 2: Super Labs Nigeria → Complete Puzzle */}
                 <path 
-                  d="M280,180 Q280,250 262,260"
+                  d="M290,149 Q299,226 260,240"
                   stroke="#3B82F6" 
                   strokeWidth="1" 
                   strokeDasharray="0 0"
                   fill="none"
                   className="animate-pulse"
                 />
-                
                 {/* Line 3: Complete Puzzle → Client */}
                 <path 
-                  d="M136,280 Q80,280 72,250"
+                  d="M128,249 Q160,248 72,250"
                   stroke="#3B82F6" 
                   strokeWidth="1" 
                   strokeDasharray="0 0"
+                  fill="none"
+                  className="animate-pulse"
+                />
+              </svg>
+
+              {/* Connection Lines - For Mobile Devices */}
+              <svg className="md:hidden absolute inset-0 w-full h-full" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet">
+                {/* Line 1: Incomplete Puzzle (top-left) → Super Labs Nigeria (right-center) */}
+                <path 
+                  d="M175,60 Q250,80 320,150"
+                  stroke="#3B82F6" 
+                  strokeWidth="2" 
+                  fill="none"
+                  className="animate-pulse"
+                />
+  
+                {/* Line 2: Super Labs Nigeria → Complete Puzzle (bottom-center) */}
+                <path 
+                  d="M300,160 Q300,225 271,245"
+                  stroke="#3B82F6" 
+                  strokeWidth="2" 
+                  fill="none"
+                  className="animate-pulse"
+                />
+  
+                {/* Line 3: Complete Puzzle → Client (left-center) */}
+                <path 
+                  d="M123,249 Q138,249 55,250"
+                  stroke="#3B82F6" 
+                  strokeWidth="2" 
                   fill="none"
                   className="animate-pulse"
                 />
@@ -357,7 +385,7 @@ export default function WhyUs() {
               <CheckCircle className="w-3 h-3 md:w-4 md:h-4 text-green-500" />
             </div>
             <div className="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 bg-white rounded-full p-1 md:p-2 shadow-lg border border-black">
-              <Puzzle className="w-3 h-3 md:w-4 md:h-4 text-accent" />
+              <Puzzle className="w-3 h-3 md:w-4 md:h-4 text-black" />
             </div>
           </div>
         </div>
