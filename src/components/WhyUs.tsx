@@ -1,6 +1,6 @@
 'use client';
 
-import { Paintbrush, Code, Megaphone, CheckCircle, Puzzle, Users } from 'lucide-react';
+import { Paintbrush, Code, Megaphone, TrendingUp, CheckCircle, Puzzle, Users } from 'lucide-react';
 
 export default function WhyUs() {
   return (
@@ -63,7 +63,7 @@ export default function WhyUs() {
                       <div className="absolute -top-1 -right-1 w-1.5 h-1.5 md:w-2 md:h-2 bg-red-600 rounded-full animate-pulse"></div>
                     </div>
                     <div className="w-8 h-8 md:w-10 md:h-10 bg-purple-100 rounded-lg flex items-center justify-center relative">
-                      <Puzzle className="w-3 h-3 md:w-4 md:h-4 text-purple-600" />
+                      <TrendingUp className="w-3 h-3 md:w-4 md:h-4 text-purple-600" />
                       <div className="absolute -top-1 -right-1 w-1.5 h-1.5 md:w-2 md:h-2 bg-red-600 rounded-full animate-pulse"></div>
                     </div>
                   </div>
@@ -108,7 +108,7 @@ export default function WhyUs() {
                       <Megaphone className="w-3 h-3 md:w-4 md:h-4 text-green-600" />
                     </div>
                     <div className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-br-lg flex items-center justify-center shadow-sm border border-green-200">
-                      <Puzzle className="w-3 h-3 md:w-4 md:h-4 text-green-600" />
+                      <TrendingUp className="w-3 h-3 md:w-4 md:h-4 text-green-600" />
                     </div>
                   </div>
                   <div className="text-center mt-1 md:mt-2">
