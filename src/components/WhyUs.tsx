@@ -96,7 +96,7 @@ export default function WhyUs() {
               {/* 3. Complete Puzzle (Bottom Center - responsive */}
               <div className="absolute left-1/2 -bottom-4 md:bottom-2 transform -translate-x-1/2">
                 <div className="bg-linear-to-br from-green-50 to-emerald-100 rounded-2xl p-3 md:p-4 shadow-lg border border-green-200">
-                  <div className="grid grid-cols-2 gap-1 md:gap-2">
+                  <div className="grid grid-cols-2 gap-0 m-1"> {/* This closes the space - No gap for complete puzzle look */}
                     {/* Complete Puzzle Pieces */}
                     <div className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-tl-lg flex items-center justify-center shadow-sm border border-green-200">
                       <Paintbrush className="w-3 h-3 md:w-4 md:h-4 text-green-600" />
