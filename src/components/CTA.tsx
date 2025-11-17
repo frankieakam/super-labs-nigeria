@@ -17,6 +17,7 @@ export default function CTA() {
           <button
             onClick={openCalendly}
             className="inline-block border border-blue-500 text-white px-12 py-4 rounded-lg font-semibold text-lg hover:bg-blue-500 transition-colors"
+            aria-label="Schedule a consultation on Calendly"
           >
             Start Your Project
           </button>

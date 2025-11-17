@@ -142,7 +142,8 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8"
+          aria-label="Main navigation">
             {navItems.map((item) => (
               <Link
                 key={item.id}
@@ -174,7 +175,8 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 space-y-4 pb-4">
+          <nav className="md:hidden mt-4 space-y-4 pb-4"
+          aria-label="Mobile navigation">
             {navItems.map((item) => (
               <Link
                 key={item.id}

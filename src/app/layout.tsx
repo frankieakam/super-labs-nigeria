@@ -30,6 +30,14 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.png',
   },
+  // metadataBase: new URL('https://superlabsng.vercel.app'),
+  // alternates: {
+  //   canonical: '/',
+  // },
+  // robots: {
+  //   index: true,
+  //   follow: true,
+  // }
 };
 
 export default function RootLayout({
@@ -41,6 +49,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <GlobalSchema />
+        {/* Google Search Console Verification */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-medium`}

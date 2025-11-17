@@ -12,9 +12,11 @@ export default function Hero() {
           muted
           loop
           playsInline
+          preload="metadata"
           className="w-full h-full object-cover opacity-40"
         >
           <source src="/hero-animation.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
       </div>
 
