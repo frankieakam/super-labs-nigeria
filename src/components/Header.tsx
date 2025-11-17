@@ -181,13 +181,9 @@ export default function Header() {
               <Link
                 key={item.id}
                 href={`#${item.id}`}
-                className="flex items-center space-x-3 text-gray-600 hover:text-accent transition-colors group"
+                className="block text-gray-600 transition-colors"
                 onClick={() => handleNavClick(item.id)}
               >
-                {/* Pulsing Circle Indicator */}
-                <div className={`w-2 h-2 rounded-full bg-black transition-all duration-300 ${
-                  activeNav === item.id ? 'opacity-100 animate-pulse' : 'opacity-0 group-hover:opacity-50'
-                }`} />
                 <span>{item.name}</span>
               </Link>
             ))}
