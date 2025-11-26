@@ -15,7 +15,8 @@ export default function GlobalSchema() {
     "sameAs": [
       "https://x.com/wearemdsn",
       "https://instagram.com/wearemdsn",
-      "https://tiktok.com/@wearemdsn"
+      "https://tiktok.com/@wearemdsn",
+      "https://linkedin.com/company/wearemdsn"
     ]
   };
 
